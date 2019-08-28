@@ -1,0 +1,6 @@
+/* Mixins */
+
+@mixin gradient-green {
+  background: rgb(28,67,43);
+  background: linear-gradient(180deg, rgba(28,67,43,1) 0%, rgba(37,83,55,1) 35%, rgba(43,96,65,1) 100%);
+}
