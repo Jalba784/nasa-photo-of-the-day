@@ -1,15 +1,16 @@
 /* Imports */
 
 // Vars & Mixins
-//@import "variables";
+@import "variables";
 @import "mixins";
 
-// General Styles Here
-//@import "reset";
-//@import "global";
 
-// Components Here
-@import "navbar";
-//@import "footer";
-//@import "mainbody";
 
+.App {
+  .nav-bar {
+    @include gradient-green;
+    .logo {
+      color: white;
+    }
+  }
+}

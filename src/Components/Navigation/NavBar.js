@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../Sass/navbar.scss';
 import {Navbar} from "react-bootstrap";
+import '../../Sass/App.css';
 
 const NavBar = () => (
   <div>
-      <Navbar className="nav-bar">
-          <Navbar.Brand bg="primary" href="#">Nasa Photos</Navbar.Brand>
+      <Navbar className="nav-bar" sticky="top">
+          <Navbar.Brand className="logo" bg="primary" href="#">Nasa Photos</Navbar.Brand>
       </Navbar>
   </div>
 );

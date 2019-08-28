@@ -1,9 +1,11 @@
 /* Imports */
 /* Mixins */
-/* NavBar */
-.nav-bar {
+.App .nav-bar {
   background: #1c432b;
   background: linear-gradient(180deg, #1c432b 0%, #255337 35%, #2b6041 100%);
+}
+.App .nav-bar .logo {
+  color: white;
 }
 
 /*# sourceMappingURL=App.css.map */
