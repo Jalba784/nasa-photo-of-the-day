@@ -8,9 +8,12 @@
 
 .App {
   .nav-bar {
-    @include gradient-green;
+    @include gradient-orange;
     .logo {
       color: white;
+    }
+    .nav-links {
+      margin-left: 60%;
     }
   }
 }

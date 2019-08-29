@@ -1,11 +1,14 @@
 /* Imports */
 /* Mixins */
 .App .nav-bar {
-  background: #1c432b;
-  background: linear-gradient(180deg, #1c432b 0%, #255337 35%, #2b6041 100%);
+  background: #e47613;
+  background: linear-gradient(180deg, #e47613 0%, #cd8b1a 35%, #e7b214 100%);
 }
 .App .nav-bar .logo {
   color: white;
+}
+.App .nav-bar .nav-links {
+  margin-left: 60%;
 }
 
 /*# sourceMappingURL=App.css.map */
