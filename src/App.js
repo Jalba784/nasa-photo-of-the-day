@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./Sass/App.css";
 import NavBar from "./Components/Navigation/NavBar";
 import Footer from "./Components/Footer/Footer";
-// import Pics from "./Components/MainBody/Pics";
+import Pics from "./Components/MainBody/Pics";
 import axios from 'axios';
+import styled from "styled-components";
 
-
+const MainCont = styled.div`
+    width: 80%;
+    margin: 50px auto 200px auto;
+`;
 
 function App() {
     const [nasaImages, setNasaImages] = useState([]);
@@ -19,15 +23,20 @@ function App() {
                 setNasaImages(res.data);
             })
             .catch(err => console.log(err));
-    }, []);
+    }, [llave_de_ipa]);
 
   return (
     <div className="App">
       <NavBar/>
-      <div>
-          {nasaImages.copyright}
-          {/*<Pics pic={eachPic} />*/}
-      </div>
+      <MainCont>
+          <Pics
+              title={nasaImages.title}
+              pic={nasaImages.url}
+              copyright={nasaImages.copyright}
+              explanation={nasaImages.explanation}
+              date={nasaImages.date}
+          />
+      </MainCont>
     <Footer/>
     </div>
   );
