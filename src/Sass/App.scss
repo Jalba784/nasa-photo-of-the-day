@@ -1,0 +1,19 @@
+/* Imports */
+
+// Vars & Mixins
+@import "variables";
+@import "mixins";
+
+
+
+.App {
+  .nav-bar {
+    @include gradient-orange;
+    .logo {
+      color: white;
+    }
+    .nav-links {
+      margin-left: 60%;
+    }
+  }
+}
